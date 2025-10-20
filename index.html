@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DA HOOD Services</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      font-family: monospace;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff6600;
+    }
+    .service {
+      border: 1px solid #444;
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      background-color: #1a1a1a;
+    }
+    .details {
+      display: none;
+      padding: 10px;
+      background-color: #222;
+      border-top: 1px solid #444;
+    }
+    .support {
+      margin-top: 40px;
+      border-top: 2px dashed #666;
+      padding-top: 20px;
+    }
+    .highlight {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background-color: #333;
+      padding: 5px;
+      display: block;
+      margin-top: 10px;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+<h1>DA HOOD Services</h1>
+<p>Built from salvage. Powered by browser code. Fueled by chaos.</p>
+
+<div class="service" onclick="toggle('server')">
+  🖥️ High Performance Web Hosting
+</div>
+<div class="details" id="server">
+  <p>Host your site on a custom server optimized for load and uptime.</p>
+  <ul>
+    <li><strong>Serious:</strong> ~0.006 XMR/month</li>
+    <li><strong>Casual:</strong> ~0.0025 XMR/month</li>
+    <li><strong>Meme:</strong> ~0.001 XMR/month</li>
+  </ul>
+</div>
+
+<div class="service" onclick="toggle('canva')">
+  🎨 Canva Picture Editing
+</div>
+<div class="details" id="canva">
+  <p>Get custom Canva edits starting at just ~0.0004 XMR.</p>
+  <ul>
+    <li>Basic edits: ~0.0004 XMR</li>
+    <li>Advanced compositions: ~0.0013 XMR</li>
+    <li>Bulk packs available</li>
+  </ul>
+</div>
+
+<div class="service" onclick="toggle('book')">
+  📘 Arduino Uno Basics Book
+</div>
+<div class="details" id="book">
+  <p>My beginner-friendly book on Arduino Uno is available on Bribooks.</p>
+  <p><a href="https://www.bribooks.com/bookstore/arduino-uno-the-full-guide-by-haren" target="_blank">Read it here</a></p>
+</div>
+
+<div class="support">
+  <p><strong>💸 Want to support the chaos?</strong> <a href="#" onclick="toggle('support')">Click here</a></p>
+  <div id="support" style="display:none;">
+    <h3>Send Monero to:</h3>
+    <code>4AJQfcVN7zcTEmsMcioFjcPcZKNhAp1xpLNdt9pusJouWw5XwaTrVRpUQJFPpon3QnMz4ddyTFDGMJSao2BnETczBiTtPBY</code>
+
+    <button onclick="toggle('details')">What you're supporting</button>
+    <div id="details" style="display:none;">
+      <ul>
+        <li>🧊 Salvaged mining rigs and browser dashboards</li>
+        <li>📟 LocalStorage-powered trading hubs</li>
+        <li>📺 Donator names broadcast on a hacked Slim D2H Videocon movie streaming box</li>
+        <li>🖼️ Meme NFT minted from the D2H screen</li>
+        <li class="highlight">🎖️ Patreon-tier supporters get their name + a random Italian brainrot displayed on a separate website hosted by the D2H meme server</li>
+        <li>🧠 Every donation fuels the next plot twist</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</body>
+</html>
